@@ -1,0 +1,14 @@
+<form (ngSubmit)='fetchData()'>
+  <select [formControl]='select' id='select'>
+    <option disabled selected value> - Select One -</option>
+    <option value='people'>People</option>
+    <option value='starships'>Starships</option>
+    <option value='films'>Films</option>
+  </select>
+  <input id='search' [formControl]='input' type='search' placeholder='Search'>
+  <button type='submit'>Submit</button>
+</form>
+
+{{results}}
+
+
